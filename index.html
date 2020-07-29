@@ -1,20 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Coin Game Starter</title>
-        <link rel="stylesheet" href="app.css" />
-    </head>
-
-    <body>
-        <p id="leaderBoard">💎 <span>0</span></p>
-        <img id="player" src="mario.gif" alt="mario" />
-        <img id="gem" src="gem.gif" alt="game-stuff" />
-        <script src="app.js"></script>
-        <!-- ADD ZOMBIE ENEMY WHICH WIL DEDUCT 2 GEM IF IT TOUCHES MARIO IT WILL WALK STRAIGHT -->
-        <!-- ADD FIREBALL WHICH WILL DROP AT RANDOM LOCATION AND REDUCE 5 IF FALL ON MARIO -->
-    </body>
+<html lang=en>
+<head>
+<meta charset=UTF-8 />
+<meta name=viewport content="width=device-width, initial-scale=1.0" />
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel=stylesheet />
+<link rel=stylesheet href=style.css />
+<link rel=apple-touch-icon sizes=180x180 href=Logo/apple-touch-icon.png />
+<link rel=icon type=image/png sizes=32x32 href=Logo/favicon-32x32.png />
+<link rel=icon type=image/png sizes=16x16 href=Logo/favicon-16x16.png />
+<link rel=manifest href=Logo/site.webmanifest />
+<title>Expedition by AV5™</title>
+</head>
+<body>
+<nav>
+<ul>
+<li id=logo>
+<img src=Logo/android-chrome-512x512.png alt=Logo />
+</li>
+<li class=brand>Expedition</li>
+<li>
+<a href=# title=Login><span class=label>Login</span>
+<i class="fas fa-sign-in-alt"></i></a>
+</li>
+<li>
+<a href=#sign-up title=Sign-up><span class=label>Sign Up</span>
+<i class="fas fa-user-plus"></i></a>
+</li>
+<li>
+<a href=# title=About><span class=label>About Us</span>
+<i class="fas fa-globe"></i></a>
+</li>
+<li>
+<a href=#style title=Contact><span class=label>Contact</span>
+<i class="fas fa-phone"></i></a>
+</li>
+</ul>
+</nav>
+<main>
+<header>
+<div id=buttons>
+<a title=Cruises href=#sign-up><i class="fas fa-ship"></i>
+<span class=label>CRUISE</span></a>
+<a title=Flights href=#sign-up><i class="fas fa-plane-departure"></i>
+<span class=label>FLIGHT</span></a>
+<a title="Road Trips" href=#sign-up><i class="fas fa-road"></i>
+<span class=label>ROAD TRIP</span>
+</a>
+<a title=Hotels href=#sign-up><i class="fas fa-hotel"></i>
+<span class=label>HOTEL</span></a>
+<a title=Places href=#places><i class="fas fa-map-marked-alt"></i>
+<span class=label>PLACES</span></a>
+</div>
+</header>
+<section id=home>
+<h1>Expedition</h1>
+<p>Life has no limits except the ones <span>You</span> make.</p>
+<div>
+<a href=#places>Browse</a>
+</div>
+</section>
+<section id=places>
+<h2>The Place You Want</h2>
+<div id=places-img>
+<article>
+<img src=images/hawaii.jpg alt="Picture 1" />
+<h3>Hawaii</h3>
+<button>Book Now</button>
+</article>
+<article>
+<img src=images/london.jpg alt="Picture 2" />
+<h3>London</h3>
+<button>Book Now</button>
+</article>
+<article>
+<img src=images/paris.jpg alt="Picture 3" />
+<h3>Paris</h3>
+<button>Book Now</button>
+</article>
+</div>
+<a href=#sign-up>MORE</a>
+</section>
+<section id=reviews>
+<h2>Experiences</h2>
+<div id=review-boxes>
+<article>
+<p>
+The trip was amazing, a once in a lifetime trip. My
+sister and I spent 16 days in Italy, and we had an
+unparalleled experience. Everything in each city and
+in between was incredible. The team scheduled
+activities / events for us where we wanted them to.
+</p>
+<div class=user-data>
+<h3>Joe B. Miller</h3>
+<img src=images/user_1.jpg alt="User 1" />
+</div>
+</article>
+<article>
+<p>
+Omnifood is just awesome! I just launched a startup
+which leaves me with no time for cooking, so
+Omnifood is a life-saver. Now that I got used to it,
+I couldn't live without my daily meals!
+</p>
+<div class=user-data>
+<h3>Andrea E. Morley</h3>
+<img src=images/user_2.jpg alt="User 2" />
+</div>
+</article>
+<article>
+<p>
+Omnifood is just awesome! I just launched a startup
+which leaves me with no time for cooking, so
+Omnifood is a life-saver. Now that I got used to it,
+I couldn't live without my daily meals!
+</p>
+<div class=user-data>
+<h3>Robert J. Ladner</h3>
+<img src=images/user_3.jpg alt="User 3" />
+</div>
+</article>
+<article>
+<p>
+Omnifood is just awesome! I just launched a startup
+which leaves me with no time for cooking, so
+Omnifood is a life-saver. Now that I got used to it,
+I couldn't live without my daily meals!
+</p>
+<div class=user-data>
+<h3>Willard M. Haviland</h3>
+<img src=images/user_4.jpg alt="User 4" />
+</div>
+</article>
+</div>
+<a href=#sign-up>View all Experiences</a>
+</section>
+<div id=others-title>
+<h2>Join Us</h2>
+</div>
+<section id=others>
+<div id=map>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26371286.49766774!2d-113.71643865663573!3d36.21152009978547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1595947688854!5m2!1sen!2sin" width=500 height=350 style=border:0 allowfullscreen aria-hidden=false tabindex=0></iframe>
+</div>
+<div id=sign-up>
+<h3>SIGN-UP</h3>
+<form>
+<div class=form-item>
+<label for=name>Name:</label>
+<input type=text placeholder="Your name" id=name required />
+</div>
+<div class=form-item>
+<label for=email>Email:</label>
+<input type=email placeholder="Your email ID" id=email required />
+</div>
+<div class=form-item>
+<label for=password>Password:</label>
+<input type=password placeholder="Your password" id=password required />
+</div>
+<div class=form-item>
+<label for=country>Country:</label>
+<select id=country required>
+<option value>USA</option>
+<option value>India</option>
+<option value>UK</option>
+<option value>France</option>
+<option value>Germany</option>
+<option value>Canada</option>
+</select>
+</div>
+<button onclick="alert('Under Maintenance')">
+I'M IN!
+</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<ul>
+<li class=info><a href=#>About</a></li>
+<li class=info>
+<a target=blank href=mailto:assassinayush@gmail.com>Feedback</a>
+</li>
+<li class=social-media title=Facebook>
+<a target=blank href=https://www.facebook.com><i class="fab fa-facebook-f"></i></a>
+</li>
+<li class=social-media title=Instagram>
+<a target=blank href=https://www.instagram.com><i class="fab fa-instagram"></i></a>
+</li>
+<li class=social-media title=Twitter>
+<a target=blank href=https://www.twitter.com><i class="fab fa-twitter"></i></a>
+</li>
+<li class=social-media title=YouTube>
+<a target=blank href=https://www.youtube.com><i class="fab fa-youtube"></i></a>
+</li>
+</ul>
+<br />
+<p>
+<strong>Expedition</strong> © 2020
+<a>AV5™</a>
+</p>
+<p id=author>
+Created by &mdash;
+<a id=fb-profile href=https://www.facebook.com/ayushveer.55321 target=_blank rel="noopener noreferrer">Ayush_AV5</a>
+</p>
+</footer>
+</body>
 </html>
-<!-- https://media.tenor.com/images/0791eb3858075aca85eed5ecfe08c778/tenor.gif -->
