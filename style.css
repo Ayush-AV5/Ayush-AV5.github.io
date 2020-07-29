@@ -78,6 +78,6 @@ footer p:first-of-type{margin-top:20px}
 @media all and (max-width: 505px) {
 h1{font-size:3.4em}
 h2{font-size:2.3em}
-.form-item label{font-size:.8em}
+.form-item label{font-size:1em}
 #others{padding:40px 10px 50px}
 }
