@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Raleway:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="Logo/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="Logo/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="Logo/favicon-16x16.png"
+        />
+        <link rel="manifest" href="Logo/site.webmanifest" />
+        <link rel="stylesheet" href="loginStyle.css" />
+        <title>SIGN-IN | Expedition by AV5™</title>
+    </head>
+    <body>
+        <header>
+            <h1>Expedition</h1>
+        </header>
+        <form id="login-box">
+            <h2>SIGN-IN</h2>
+            <label for="userEmail"></label>
+            <input
+                type="email"
+                name="emailID"
+                id="userEmail"
+                placeholder="Email or Username"
+                aria-label="Email ID"
+                spellcheck="false"
+                required
+            />
+            <br />
+            <label for="userPassword"></label>
+            <input
+                type="password"
+                id="userPassword"
+                placeholder="Password"
+                aria-label="password"
+                pattern=".{4,8}"
+                maxlength="8"
+                title="Password length must be between 4 to 8 characters!"
+                required
+            />
+            <p id="forgot"><a href="#" title="Reset Password">Forgot it?</a></p>
+            <!--JAVASCRIPT FAR LATER-->
+            <label for="sign-in"></label>
+            <a href="../index.html" id='sign-in'>SIGN-IN</a>
+        </form>
+        <footer>
+            <p>
+                <span
+                    ><a href="#" tabindex="-1" title="Expedition"
+                        >Expedition</a
+                    ></span
+                >
+                by AV5™
+            </p>
+        </footer>
+    </body>
+</html>
